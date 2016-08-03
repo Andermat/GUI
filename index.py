@@ -40,9 +40,15 @@ class Example(QMainWindow):
         exitAction.setStatusTip('Exit application')
         exitAction.triggered.connect(qApp.quit)
 
+        exportAction = QAction(QIcon('export.png'), '&Export', self)
+        exportAction.setShortcut('Ctrl+E')
+        exportAction.setStatusTip('Export data')
+        exportAction.triggered.connect(qApp.quit)
+
         menubar = self.menuBar()
         fileMenu = menubar.addMenu('&File')
         fileMenu.addAction(exitAction)
+        fileMenu.addAction(exportAction)
 
         btn = QPushButton('Search', self)
         btn.setToolTip('Search some data')
