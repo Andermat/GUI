@@ -35,15 +35,15 @@ class Example(QMainWindow):
         self.setFixedSize(400, 500)
         self.statusBar().showMessage('Ready')
 
-        exitAction = QAction(QIcon('exit.png'), '&Exit', self)
-        exitAction.setShortcut('Ctrl+Q')
-        exitAction.setStatusTip('Exit application')
-        exitAction.triggered.connect(qApp.quit)
-
         exportAction = QAction(QIcon('export.png'), '&Export', self)
         exportAction.setShortcut('Ctrl+E')
         exportAction.setStatusTip('Export data')
         exportAction.triggered.connect(qApp.quit)
+
+        exitAction = QAction(QIcon('exit.png'), '&Exit', self)
+        exitAction.setShortcut('Ctrl+Q')
+        exitAction.setStatusTip('Exit application')
+        exitAction.triggered.connect(qApp.quit)
 
         menubar = self.menuBar()
         fileMenu = menubar.addMenu('&File')
