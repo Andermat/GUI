@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from PyQt5.QtWidgets import (QMainWindow, QToolTip, QPushButton, QApplication, QAction, qApp, QLabel, QCalendarWidget)
-from PyQt5.QtCore import (QCoreApplication, QDate)
-from PyQt5.QtGui import (QFont, QIcon)
-from pypyodbc import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtSql import *
+#from pypyodbc import *
 
 
 class Example(QMainWindow):
