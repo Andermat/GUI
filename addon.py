@@ -1,6 +1,6 @@
 import sys
-from PyQt4 import QtCore, QtGui, QtSql
-import sportsconnection
+from PyQt5 import (QtWidgets, QtCore, QtGui, QtSql)
+#import sportsconnection
 
 
 def initializeModel(model):
@@ -32,7 +32,7 @@ def findrow(i):
 
 
 if __name__ == '__main__':
-    app = QtGui.QApplication(sys.argv)
+    #app = QtGui.QApplication(sys.argv)
     db = QtSql.QSqlDatabase.addDatabase('QSQLITE')
     db.setDatabaseName('sports.db')
     model = QtSql.QSqlTableModel()
